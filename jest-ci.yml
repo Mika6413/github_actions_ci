@@ -29,4 +29,5 @@ jobs:
         with:
           push: true
           context: ./client/Dockerfile
+          # context: "{{defaultContext}}:client"
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/quete1902:latest
